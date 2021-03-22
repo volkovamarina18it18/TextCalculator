@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/enter_text_1"
+        android:layout_width="170dp"
+        android:layout_height="47dp"
+        android:autofillHints="phone"
+        android:ems="15"
+        android:hint="Введите число"
+        android:inputType="phone"
+        android:maxLength="6"
+        app:layout_constraintBottom_toTopOf="@+id/enter_text_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="q" />
+
+    <EditText
+        android:id="@+id/enter_text_2"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:autofillHints="phone"
+        android:ems="15"
+        android:hint="Введите число"
+        android:inputType="phone"
+        android:maxLength="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="q" />
+
+
+    <TextView
+        android:id="@+id/first_operand"
+        android:layout_width="154dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Первое слагаемое"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/second_operand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/second_operand"
+        android:layout_width="154dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Второе  слагаемое"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSendClick"
+        android:background="@color/colorPrimaryDark"
+        android:text="Сложить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
